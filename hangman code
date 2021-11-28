@@ -1,7 +1,23 @@
-
-            /* Variables / Arrays */
+ /* Variables / Arrays */
             int livesRemaining = 6;
-            string[] guessWord = new string[] { "e", "e", "s", "a", "a" };
+            /* Ten different words */
+            string[] guessWord0 = new string[] { "e", "e", "s", "a", "a" };
+            string[] guessWord1 = new string[] { "e", "e", "s", "a", "a" };
+            string[] guessWord2 = new string[] { "e", "e", "s", "a", "a" };
+            string[] guessWord3 = new string[] { "e", "e", "s", "a", "a" };
+            string[] guessWord4 = new string[] { "e", "e", "s", "a", "a" };
+            string[] guessWord5 = new string[] { "e", "e", "s", "a", "a" };
+            string[] guessWord6 = new string[] { "e", "e", "s", "a", "a" };
+            string[] guessWord7 = new string[] { "e", "e", "s", "a", "a" };
+            string[] guessWord8 = new string[] { "e", "e", "s", "a", "a" };
+            string[] guessWord9 = new string[] { "e", "e", "s", "a", "a" };
+            Random Rnd = new Random();
+            int num = Rnd.Next(9);
+            string[][] guessWords = new string[][] { guessWord0, guessWord1, guessWord2, guessWord3, guessWord4, guessWord5, guessWord6, guessWord7, guessWord8, guessWord9 };
+            string[] guessWord = guessWords[num];
+            
+
+
             string[] currWord = new string[] { "_", "_", "_", "_", "_" };
             /* Variable "a" established to stop loop when word is guessed*/
             int a = 0;
@@ -52,4 +68,3 @@
             {
                 Console.WriteLine("Unlucky, you ran out of lives, better luck next time!");
             }
-  
