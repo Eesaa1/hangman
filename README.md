@@ -1,9 +1,4 @@
-namespace Hangman
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
+
             /* Variables / Arrays */
             int livesRemaining = 6;
             string[] guessWord = new string[] { "e", "e", "s", "a", "a" };
@@ -57,6 +52,4 @@ namespace Hangman
             {
                 Console.WriteLine("Unlucky, you ran out of lives, better luck next time!");
             }
-        }
-    }
-}
+  
